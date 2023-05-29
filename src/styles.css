@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#root,
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(94, 20, 20);
+  color: #fff;
+  padding: 4px;
+}
+
+nav > img {
+  width: 65px;
+  height: 100%;
+}
+
+nav h1 {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  margin: 0;
+  display: flex;
+}
+
+.blue {
+  color: rgb(0, 110, 255);
+}
+
+main {
+  position: relative;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top */
+}
+
+main > img {
+  min-height: 100%;
+  max-width: 100%;
+}
+
+.timer-container {
+  font-size: 30px;
+}
+
+.nav-dropdown-characters {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  right: 7.5%;
+  width: 230px;
+  height: 35vh;
+  transform: translateY(5%);
+  background-color: #4e1700;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 12px 20px;
+  overflow: hidden;
+  gap: 12px;
+  z-index: 10;
+}
+
+.nav-dropdown-characters p {
+  margin: 0;
+  font-size: 1.4vw;
+  border-bottom: 2px solid rgb(128, 31, 31);
+  width: 100%;
+  text-align: center;
+}
+
+.nav-dropdown-characters h1 {
+  font-size: 1.5vw;
+}
+
+.card {
+  display: flex;
+  height: 23%;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card img {
+  height: 100%;
+  width: 3.5vw;
+}
+
+.menu {
+  background-color: #612207;
+  height: "fit-content";
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.menu button {
+  border: 0;
+  background-color: #612207;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.menu button:hover {
+  background-color: #4e1700;
+}
+
+.found {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #000000e1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.modal-container {
+  width: 21vw;
+  height: 28vh;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-container input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  font-size: 0.75vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.modal-container h2 {
+  margin: 0;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  text-align: center;
+  font-size: 1.15vw;
+}
+
+.modal-buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-buttons button {
+  border: 0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-weight: bold;
+}
+
+.modal-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.modal-submit-button {
+  background-color: #40e291;
+  color: #ffffff;
+}
+
+.modal-cancel-button {
+  background-color: #ee6363;
+  color: #ffffff;
+}
+
+.timer-container h1 {
+  width: 11vw;
+}
+
+.nav-found-characters {
+  padding: 0.4vw 0.85vw;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  font-size: 1vw;
+  background-color: rgb(122, 25, 25);
+  color: #fff;
+}
+
+.disable-scroll {
+  overflow: hidden;
+  position: static;
+}
+
+#leaderboard-modal-container {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+#leaderboard-modal-container h1 {
+  margin: 0 auto 0 auto;
+}
+
+#leaderboard-modal-container p {
+  margin: 6px;
+}
+
+.leaderboard-player {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(214, 214, 214);
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.leaderboard-restart-button {
+  margin: auto;
+  margin-top: 10px;
+  background-color: orange;
+  color: #fff;
+  padding: 5px 21px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border: 0;
+}
+
+.leaderboard-restart-button:hover {
+  transform: scale(1.05);
+}
+
+.found-char-popup {
+  position: absolute;
+  top: 10%;
+  background-color: #aa4141;
+  padding: 0 10px;
+  border-radius: 5px;
+  z-index: 10;
+  color: #fff;
+  font-size: 15px;
+  left: 50%;
+  display: none;
+  font-weight: bold;
+}
