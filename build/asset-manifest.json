@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/a-photo-tagging-app/static/css/main.30496f24.css",
+    "main.js": "/a-photo-tagging-app/static/js/main.3ddcaad8.js",
+    "static/media/map.jpg": "/a-photo-tagging-app/static/media/map.314cec99f414807b7e27.jpg",
+    "static/media/batman.png": "/a-photo-tagging-app/static/media/batman.82e5049f0f5f57c58fc0.png",
+    "static/media/sonic.png": "/a-photo-tagging-app/static/media/sonic.4a47ce681d2c805653e6.png",
+    "static/media/waldo.png": "/a-photo-tagging-app/static/media/waldo.2e0a3ea05584dc12a4bd.png",
+    "index.html": "/a-photo-tagging-app/index.html",
+    "main.30496f24.css.map": "/a-photo-tagging-app/static/css/main.30496f24.css.map",
+    "main.3ddcaad8.js.map": "/a-photo-tagging-app/static/js/main.3ddcaad8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30496f24.css",
+    "static/js/main.3ddcaad8.js"
+  ]
+}
